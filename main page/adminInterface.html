@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Triage - Admin</title>
+    <link rel="stylesheet" href="AdminStyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hospital Triage - Admin</h1>
+        <br /> 
+        <br /> 
+        <p>Welcome to the admin panel, items will be displayed below based on their level of necessary attention.</p>
+        <p>Please note: Necessary attention is rated out of 10 (1 being less significant than 10)</p>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Entry Number</th>
+                        <th>Necessary Attention</th>
+                        <th>Injury Type</th>
+                        <th>Pain Level</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <button id="loadData">Load Data</button>
+        
+        <div class="selection-actions">
+            <p>Selection actions:</p>
+            <div>
+                <span>Selected Entry: 1</span>
+                <button>Remove From Triage</button>
+                <button>Increase Necessary Attention</button>
+                <button>Decrease Necessary Attention</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
